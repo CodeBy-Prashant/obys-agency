@@ -10,6 +10,16 @@ html , body {
     height: 100%;
     width: 100%;
 }
+#crsr{
+    height: 2.3vw;
+    width:2.3vw;
+    border-radius: 50%;
+    border: 1px solid rgb(251, 251, 251);
+    position: fixed;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%);
+}
 #loader{
     height: 100%;
     width: 100%;
@@ -99,5 +109,50 @@ html , body {
 #page1{
     height: 100vh;
     width: 100%;
-    background-color: #c48c8c;
+    background-color: #111;
+}
+#page1 #nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+}
+#nav-part2{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+#nav-part2 h4{
+    font-size: 1.4vw;
+    font-weight: 500;
+}
+.hero{
+    display: flex;
+    width: 71%;
+    margin-left: 26%;
+    overflow: hidden;
+    height: fit-content;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+}
+.hero:nth-child(2){
+    margin-top:20vh;
+}
+.hero h1{
+    font-size:7.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7vw;
+}
+.hero h2 , .hero h3{
+    font-size:7.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7vw;
+}
+#hero3  h2:hover{
+    -webkit-text-stroke: 1px  #fff;
+    color: transparent;
 }
