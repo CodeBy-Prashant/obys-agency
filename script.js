@@ -36,10 +36,10 @@ tl.to("#loader",{
 
 tl.from("#page1" , {
     delay : 0.2,
-    y:1400,
+    y:8,
     opacity :0,
     duration:1,
-    ease : Power4,
+    ease:Power4,
 })
 tl.to("#loader",{
     display:"none",
